@@ -76,7 +76,7 @@ export default function BackendEngineeringPortfolio() {
           <div className="max-w-4xl space-y-8">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
               <img
-                src="/tosin.jpg"
+                src="/profile.png"
                 alt="Tosin Owolabi"
                 className="h-28 w-28 rounded-full border-4 border-emerald-500/20 object-cover shadow-2xl"
               />
