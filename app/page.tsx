@@ -1,84 +1,103 @@
 export default function BackendEngineeringPortfolio() {
   const projects = [
     {
-      title: 'Content Ops Tool Backend',
+      title: "Content Ops Tool Backend",
       description:
-        'Production-grade backend API built with NestJS, PostgreSQL, Prisma ORM, JWT authentication, and scalable modular architecture.',
+        "Production-grade backend API built with NestJS, PostgreSQL, Prisma ORM, JWT authentication, and scalable modular architecture.",
       highlights: [
-        'JWT Access & Refresh Token Flow',
-        'Swagger/OpenAPI Documentation',
-        'DTO Validation Pipelines',
-        'PostgreSQL + Prisma Integration',
-        'Railway Cloud Deployment',
+        "JWT Access & Refresh Token Flow",
+        "Swagger/OpenAPI Documentation",
+        "DTO Validation Pipelines",
+        "PostgreSQL + Prisma Integration",
+        "Railway Cloud Deployment",
       ],
-      github:
-        'https://github.com/gibsonJESUS1/content-ops-tool-backend',
-      live: 'https://scintillating-bravery-production.up.railway.app/api/docs',
+      github: "https://github.com/gibsonJESUS1/content-ops-tool-backend",
+      live: "https://scintillating-bravery-production.up.railway.app/api/docs",
     },
     {
-      title: 'GoldenYield Mart Management System',
+      title: "GoldenYield Mart Management System",
       description:
-        'Production-ready retail management system designed for real business operations.',
+        "Production-ready retail management system designed for real business operations.",
       highlights: [
-        'Inventory Management',
-        'Sales & Revenue Tracking',
-        'Customer Debt Tracking',
-        'Analytics Dashboard',
-        'Retail Workflow Integration',
+        "Inventory Management",
+        "Sales & Revenue Tracking",
+        "Customer Debt Tracking",
+        "Analytics Dashboard",
+        "Retail Workflow Integration",
       ],
       github:
-        'https://github.com/gibsonJESUS1/goldenyield--mart-management-system',
-      live:
-        'https://goldenyield-mart-management-system-chi.vercel.app/dashboard',
+        "https://github.com/gibsonJESUS1/goldenyield--mart-management-system",
+      live: "https://goldenyield-mart-management-system-chi.vercel.app/dashboard",
     },
     {
-      title: 'Golden Yield Backend',
+      title: "Golden Yield Backend",
       description:
-        'Backend infrastructure for an e-commerce platform focused on scalable APIs and business operations.',
+        "Backend infrastructure for an e-commerce platform focused on scalable APIs and business operations.",
       highlights: [
-        'REST API Architecture',
-        'Authentication System',
-        'Product & Order Management',
-        'PostgreSQL Database Design',
-        'Admin Backend Operations',
+        "REST API Architecture",
+        "Authentication System",
+        "Product & Order Management",
+        "PostgreSQL Database Design",
+        "Admin Backend Operations",
       ],
-      github:
-        'https://github.com/gibsonJESUS1/golden-yield-backend',
-      live: '#',
+      github: "https://github.com/gibsonJESUS1/golden-yield-backend",
+      live: "#",
     },
-  ]
+  ];
 
   const stack = {
-    'Backend Engineering': ['Node.js', 'TypeScript', 'NestJS', 'Express.js'],
-    'Database & ORM': ['PostgreSQL', 'Prisma ORM'],
-    'Authentication & Security': [
-      'JWT Authentication',
-      'Role Guards',
-      'Protected Routes',
-      'DTO Validation',
+    "Backend Engineering": ["Node.js", "TypeScript", "NestJS", "Express.js"],
+    "Database & ORM": ["PostgreSQL", "Prisma ORM"],
+    "Authentication & Security": [
+      "JWT Authentication",
+      "Role Guards",
+      "Protected Routes",
+      "DTO Validation",
     ],
-    'Cloud & Infrastructure': [
-      'Docker',
-      'Railway',
-      'Vercel',
-      'Environment Configuration',
+    "Cloud & Infrastructure": [
+      "Docker",
+      "Railway",
+      "Vercel",
+      "Environment Configuration",
     ],
-    'API & Architecture': [
-      'REST APIs',
-      'Swagger/OpenAPI',
-      'Modular Architecture',
-      'Exception Filters',
-      'Interceptors',
+    "API & Architecture": [
+      "REST APIs",
+      "Swagger/OpenAPI",
+      "Modular Architecture",
+      "Exception Filters",
+      "Interceptors",
     ],
-  }
+  };
 
   return (
     <main className="min-h-screen bg-black text-white">
       <section className="border-b border-white/10 bg-gradient-to-b from-zinc-900 to-black">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
           <div className="max-w-4xl space-y-8">
-            <div className="inline-flex rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-400">
-              Backend Engineer • Node.js • TypeScript • Cloud Systems
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
+              <img
+                src="/tosin.jpg"
+                alt="Tosin Owolabi"
+                className="h-28 w-28 rounded-full border-4 border-emerald-500/20 object-cover shadow-2xl"
+              />
+
+              <div className="space-y-3">
+                <div className="inline-flex rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-400">
+                  Backend Engineer • Node.js • TypeScript • Cloud Systems
+                </div>
+
+                <div>
+                  <h2 className="text-3xl font-bold lg:text-4xl">
+                    Tosin Owolabi
+                  </h2>
+
+                  <p className="mt-2 text-zinc-400">
+                    Backend Engineer focused on scalable systems, API
+                    architecture, PostgreSQL, and cloud-ready backend
+                    applications.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="space-y-6">
@@ -87,10 +106,11 @@ export default function BackendEngineeringPortfolio() {
               </h1>
 
               <p className="max-w-3xl text-lg leading-8 text-zinc-400 lg:text-xl">
-                I’m Tosin Owolabi, a Backend Engineer focused on API architecture,
-                authentication systems, PostgreSQL database engineering, and
-                production-ready backend services using Node.js, TypeScript,
-                NestJS, and modern backend engineering practices.
+                I’m Tosin Owolabi, a Backend Engineer focused on API
+                architecture, authentication systems, PostgreSQL database
+                engineering, and production-ready backend services using
+                Node.js, TypeScript, NestJS, and modern backend engineering
+                practices.
               </p>
             </div>
 
@@ -137,20 +157,20 @@ export default function BackendEngineeringPortfolio() {
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {[
             {
-              title: 'Backend Architecture',
-              text: 'Designing modular backend systems with scalability and maintainability in mind.',
+              title: "Backend Architecture",
+              text: "Designing modular backend systems with scalability and maintainability in mind.",
             },
             {
-              title: 'API Engineering',
-              text: 'Building REST APIs with authentication, validation, and structured service layers.',
+              title: "API Engineering",
+              text: "Building REST APIs with authentication, validation, and structured service layers.",
             },
             {
-              title: 'Database Systems',
-              text: 'Working with PostgreSQL and Prisma ORM for relational data modeling.',
+              title: "Database Systems",
+              text: "Working with PostgreSQL and Prisma ORM for relational data modeling.",
             },
             {
-              title: 'Cloud Deployment',
-              text: 'Deploying backend systems using Railway and frontend applications using Vercel.',
+              title: "Cloud Deployment",
+              text: "Deploying backend systems using Railway and frontend applications using Vercel.",
             },
           ].map((item) => (
             <div
@@ -247,7 +267,7 @@ export default function BackendEngineeringPortfolio() {
                       GitHub Repository
                     </a>
 
-                    {project.live !== '#' && (
+                    {project.live !== "#" && (
                       <a
                         href={project.live}
                         target="_blank"
@@ -320,7 +340,9 @@ export default function BackendEngineeringPortfolio() {
 
                 <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-zinc-950 px-5 py-4">
                   <span>Docker</span>
-                  <span className="text-zinc-500">Containerization Learning</span>
+                  <span className="text-zinc-500">
+                    Containerization Learning
+                  </span>
                 </div>
               </div>
             </div>
@@ -336,12 +358,12 @@ export default function BackendEngineeringPortfolio() {
 
               <div className="space-y-4 text-zinc-300">
                 {[
-                  'Distributed Systems Fundamentals',
-                  'Cloud Infrastructure Engineering',
-                  'CI/CD Pipelines',
-                  'Observability & Monitoring',
-                  'Event-driven Architecture',
-                  'Backend Performance Optimization',
+                  "Distributed Systems Fundamentals",
+                  "Cloud Infrastructure Engineering",
+                  "CI/CD Pipelines",
+                  "Observability & Monitoring",
+                  "Event-driven Architecture",
+                  "Backend Performance Optimization",
                 ].map((item) => (
                   <div
                     key={item}
@@ -363,12 +385,13 @@ export default function BackendEngineeringPortfolio() {
           </p>
 
           <h2 className="mx-auto mb-6 max-w-3xl text-4xl font-bold lg:text-5xl">
-            Backend engineering opportunities, remote roles & international relocation.
+            Backend engineering opportunities, remote roles & international
+            relocation.
           </h2>
 
           <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-zinc-400">
-            Interested in backend engineering, cloud-oriented systems, API architecture,
-            and scalable production applications.
+            Interested in backend engineering, cloud-oriented systems, API
+            architecture, and scalable production applications.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -398,5 +421,5 @@ export default function BackendEngineeringPortfolio() {
         </div>
       </footer>
     </main>
-  )
+  );
 }
