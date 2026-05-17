@@ -1,343 +1,402 @@
-export default function TosinPortfolioWebsite() {
+export default function BackendEngineeringPortfolio() {
   const projects = [
     {
-      title: "Shop Management System",
+      title: 'Content Ops Tool Backend',
       description:
-        "Backend-driven system for managing sales, inventory, and daily revenue tracking for small business operations.",
-      points: [
-        "Tracked product performance and daily sales insights",
-        "Supported inventory, pricing, and decision-making",
-        "Improved visibility into business operations and financial tracking",
+        'Production-grade backend API built with NestJS, PostgreSQL, Prisma ORM, JWT authentication, and scalable modular architecture.',
+      highlights: [
+        'JWT Access & Refresh Token Flow',
+        'Swagger/OpenAPI Documentation',
+        'DTO Validation Pipelines',
+        'PostgreSQL + Prisma Integration',
+        'Railway Cloud Deployment',
       ],
-      caseStudy: {
-        heading: "Case Study",
-        paragraphs: [
-          "This system was built to solve real business challenges around tracking sales, inventory, profitability, and debt in a structured way.",
-          "It gives business owners visibility into revenue, cost of sales, gross profit, stock value, outstanding debts, and product performance in real time.",
-          "One of the key problems it addresses is the gap between having data and making practical decisions. By highlighting low stock items, product performance, and financial records, the system supports better decisions around restocking, pricing, and sales tracking.",
-          "This project reflects my growing interest in combining software development with business analytics to build systems that do not only manage operations, but also support data-driven decision-making.",
-        ],
-      },
-      metrics: [
-        { value: "697+", label: "Sales Records" },
-        { value: "100+", label: "Inventory Items" },
-        { value: "₦600K+", label: "Tracked Revenue" },
-        { value: "11", label: "Debt Accounts" },
-      ],
-      links: [
-        { label: "Live App", url: "https://goldenyield-mart-management-system-chi.vercel.app/dashboard" },
-        { label: "GitHub", url: "https://github.com/gibsonJESUS1/goldenyield--mart-management-system" },
-      ],
-      stack: ["Node.js", "TypeScript", "Express.js", "PostgreSQL", "Prisma ORM", "Next.js"],
-      images: [
-        { src: "/images/dashboard.png", alt: "Dashboard Overview" },
-        { src: "/images/sales.png", alt: "Sales History" },
-        { src: "/images/inventory.png", alt: "Inventory System" },
-      ],
+      github:
+        'https://github.com/gibsonJESUS1/content-ops-tool-backend',
+      live: 'https://scintillating-bravery-production.up.railway.app/api/docs',
     },
     {
-      title: "YieldMart — E-commerce Platform",
+      title: 'GoldenYield Mart Management System',
       description:
-        "E-commerce system for managing products, orders, and transactions in a real-world business setting.",
-      points: [
-        "Built scalable backend APIs",
-        "Handled product management and order workflows",
-        "Focused on practical business use cases and reliability",
+        'Production-ready retail management system designed for real business operations.',
+      highlights: [
+        'Inventory Management',
+        'Sales & Revenue Tracking',
+        'Customer Debt Tracking',
+        'Analytics Dashboard',
+        'Retail Workflow Integration',
       ],
-      links: [
-        { label: "GitHub", url: "https://github.com/gibsonJESUS1/goldenyield--mart-management-system" },
-      ],
-      stack: ["Node.js", "TypeScript", "PostgreSQL", "Prisma ORM"],
+      github:
+        'https://github.com/gibsonJESUS1/goldenyield--mart-management-system',
+      live:
+        'https://goldenyield-mart-management-system-chi.vercel.app/dashboard',
     },
     {
-      title: "Tutor Service Platform",
+      title: 'Golden Yield Backend',
       description:
-        "Platform connecting tutors with students across different locations.",
-      points: [
-        "Designed user interaction and service matching flows",
-        "Focused on accessibility and usability",
-        "Solved a real-world educational access problem",
+        'Backend infrastructure for an e-commerce platform focused on scalable APIs and business operations.',
+      highlights: [
+        'REST API Architecture',
+        'Authentication System',
+        'Product & Order Management',
+        'PostgreSQL Database Design',
+        'Admin Backend Operations',
       ],
-      links: [
-        { label: "GitHub", url: "https://github.com/gibsonJESUS1/tutor-backend" },
-      ],
-      stack: ["Node.js", "Express.js", "PostgreSQL"],
+      github:
+        'https://github.com/gibsonJESUS1/golden-yield-backend',
+      live: '#',
     },
-    {
-      title: "Client Business Systems",
-      description:
-        "Customized systems for solar and electronics store clients.",
-      points: [
-        "Built solutions for product tracking and operations",
-        "Improved workflow efficiency",
-        "Delivered tailored systems for small business needs",
-      ],
-      links: [],
-      stack: ["JavaScript", "Node.js", "Business System Design"],
-    },
-  ];
+  ]
 
-  const skills = [
-    "JavaScript",
-    "TypeScript",
-    "Node.js",
-    "Express.js",
-    "PostgreSQL",
-    "Prisma",
-    "REST APIs",
-    "Docker",
-    "Backend Architecture",
-    "Business Process Optimization",
-    "Sales & Inventory Analysis",
-    "Data Interpretation",
-  ];
+  const stack = {
+    'Backend Engineering': ['Node.js', 'TypeScript', 'NestJS', 'Express.js'],
+    'Database & ORM': ['PostgreSQL', 'Prisma ORM'],
+    'Authentication & Security': [
+      'JWT Authentication',
+      'Role Guards',
+      'Protected Routes',
+      'DTO Validation',
+    ],
+    'Cloud & Infrastructure': [
+      'Docker',
+      'Railway',
+      'Vercel',
+      'Environment Configuration',
+    ],
+    'API & Architecture': [
+      'REST APIs',
+      'Swagger/OpenAPI',
+      'Modular Architecture',
+      'Exception Filters',
+      'Interceptors',
+    ],
+  }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-emerald-500/20 blur-3xl" />
-        <div className="absolute right-0 top-32 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl" />
-        <div className="absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-amber-500/10 blur-3xl" />
-      </div>
-
-      <header className="sticky top-0 z-20 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div>
-            <p className="text-sm font-medium text-emerald-300">Tosin Owolabi</p>
-            <p className="text-xs text-slate-400">Software Developer • Business Systems</p>
-          </div>
-          <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#projects" className="hover:text-white">Projects</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      <section className="mx-auto grid max-w-6xl gap-10 px-6 pb-16 pt-16 md:grid-cols-[1.3fr_.7fr] md:pb-24 md:pt-24">
-        <div className="self-center">
-          <div className="inline-flex items-center rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-200">
-            Software Developer • Business-Focused Builder
-          </div>
-          <h1 className="mt-6 text-4xl font-semibold tracking-tight text-white md:text-6xl md:leading-[1.05]">
-            I build systems that help businesses track performance and make better decisions.
-          </h1>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 md:text-lg">
-            With over five years of experience, I have worked on business systems including e-commerce platforms,
-            financial applications, store management systems, and service-based platforms. My next step is to deepen
-            that practical experience with Management and Business Analytics.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="rounded-2xl bg-emerald-400 px-5 py-3 font-medium text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:-translate-y-0.5"
-            >
-              View My Work
-            </a>
-            <a
-              href="https://github.com/gibsonJESUS1"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-medium text-white transition hover:border-white/20 hover:bg-white/10"
-            >
-              GitHub Profile
-            </a>
-          </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-              <p className="text-2xl font-semibold text-white">5+</p>
-              <p className="mt-1 text-sm text-slate-400">Years Building</p>
+    <main className="min-h-screen bg-black text-white">
+      <section className="border-b border-white/10 bg-gradient-to-b from-zinc-900 to-black">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+          <div className="max-w-4xl space-y-8">
+            <div className="inline-flex rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-400">
+              Backend Engineer • Node.js • TypeScript • Cloud Systems
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-              <p className="text-2xl font-semibold text-white">4</p>
-              <p className="mt-1 text-sm text-slate-400">Featured Projects</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-              <p className="text-2xl font-semibold text-white">Business + Tech</p>
-              <p className="mt-1 text-sm text-slate-400">Practical Focus</p>
-            </div>
-          </div>
-        </div>
 
-        <div className="flex items-center justify-center">
-          <div className="relative w-full max-w-sm">
-            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-emerald-400/30 via-cyan-400/10 to-amber-400/10 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/80 p-4 shadow-2xl shadow-black/30 backdrop-blur-xl">
-              <div className="aspect-[4/5] overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-800 to-slate-900">
-                <img
-                  src="/images/profile.jpg"
-                  alt="Tosin Owolabi"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="text-sm text-slate-400">Based in Nigeria</p>
-                <p className="mt-2 text-lg font-semibold text-white">Backend Developer with business systems focus</p>
-                <p className="mt-2 text-sm leading-7 text-slate-300">
-                  Building practical software for operations, analytics, and decision support.
-                </p>
-              </div>
+            <div className="space-y-6">
+              <h1 className="text-5xl font-bold leading-tight lg:text-7xl">
+                Building scalable backend systems & cloud-ready applications.
+              </h1>
+
+              <p className="max-w-3xl text-lg leading-8 text-zinc-400 lg:text-xl">
+                I’m Tosin Owolabi, a Backend Engineer focused on API architecture,
+                authentication systems, PostgreSQL database engineering, and
+                production-ready backend services using Node.js, TypeScript,
+                NestJS, and modern backend engineering practices.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://github.com/gibsonJESUS1"
+                target="_blank"
+                className="rounded-2xl bg-white px-6 py-3 font-semibold text-black transition hover:opacity-90"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/tosin-owolabi-98b2b450/"
+                target="_blank"
+                className="rounded-2xl border border-white/20 px-6 py-3 font-semibold transition hover:border-white"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://scintillating-bravery-production.up.railway.app/api/docs"
+                target="_blank"
+                className="rounded-2xl border border-emerald-500/30 bg-emerald-500/10 px-6 py-3 font-semibold text-emerald-400 transition hover:bg-emerald-500/20"
+              >
+                Swagger Docs
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="grid gap-6 md:grid-cols-[1fr_1.2fr]">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-300">About</p>
-            <h2 className="mt-4 text-3xl font-semibold text-white">Technology with business value</h2>
-            <p className="mt-4 leading-8 text-slate-300">
-              I am a software developer with a strong interest in business systems, data-driven decision-making,
-              and operational efficiency. My work has shown me that the real challenge is not only building software,
-              but building systems that support better strategy and measurable business outcomes.
-            </p>
-          </div>
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-300">Core Skills</p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-slate-200"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="mb-10">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-300">Selected Work</p>
-          <h2 className="mt-3 text-3xl font-semibold text-white md:text-4xl">Projects with real business context</h2>
-          <p className="mt-4 max-w-3xl text-slate-400">
-            Real systems built around business operations, performance tracking, and practical use.
+      <section className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+        <div className="mb-16 max-w-3xl space-y-4">
+          <p className="text-sm uppercase tracking-[0.3em] text-emerald-400">
+            Engineering Focus
           </p>
+
+          <h2 className="text-4xl font-bold lg:text-5xl">
+            Backend systems engineered for scalability.
+          </h2>
         </div>
 
-        <div className="space-y-8">
-          {projects.map((project) => (
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {[
+            {
+              title: 'Backend Architecture',
+              text: 'Designing modular backend systems with scalability and maintainability in mind.',
+            },
+            {
+              title: 'API Engineering',
+              text: 'Building REST APIs with authentication, validation, and structured service layers.',
+            },
+            {
+              title: 'Database Systems',
+              text: 'Working with PostgreSQL and Prisma ORM for relational data modeling.',
+            },
+            {
+              title: 'Cloud Deployment',
+              text: 'Deploying backend systems using Railway and frontend applications using Vercel.',
+            },
+          ].map((item) => (
             <div
-              key={project.title}
-              className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl"
+              key={item.title}
+              className="rounded-3xl border border-white/10 bg-zinc-900 p-8"
             >
-              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <div className="max-w-3xl">
-                  <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
-                  <p className="mt-3 leading-8 text-slate-300">{project.description}</p>
-                </div>
-                {project.links && project.links.length > 0 && (
-                  <div className="flex flex-wrap gap-3">
-                    {project.links.map((l) => (
-                      <a
-                        key={l.url}
-                        href={l.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="rounded-xl border border-white/10 bg-slate-900/70 px-4 py-2 text-sm text-white transition hover:border-white/20 hover:bg-slate-800"
-                      >
-                        {l.label}
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                {project.stack?.map((item) => (
-                  <span key={item} className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-200">
-                    {item}
-                  </span>
-                ))}
-              </div>
-
-              <ul className="mt-6 grid gap-3 text-sm leading-7 text-slate-300 md:grid-cols-3">
-                {project.points.map((point) => (
-                  <li key={point} className="rounded-2xl border border-white/10 bg-slate-900/50 p-4">
-                    {point}
-                  </li>
-                ))}
-              </ul>
-
-              {project.caseStudy && (
-                <div className="mt-8 rounded-[1.5rem] border border-emerald-400/20 bg-emerald-400/5 p-6">
-                  <h4 className="text-lg font-semibold text-white">{project.caseStudy.heading}</h4>
-
-                  {project.metrics && (
-                    <div className="mt-5 grid gap-4 md:grid-cols-4">
-                      {project.metrics.map((metric) => (
-                        <div key={metric.label} className="rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-center">
-                          <p className="text-xl font-semibold text-white">{metric.value}</p>
-                          <p className="mt-1 text-xs uppercase tracking-wide text-slate-400">{metric.label}</p>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
-                  {project.images && (
-                    <div className="mt-6 grid gap-4 md:grid-cols-3">
-                      {project.images.map((image) => (
-                        <div key={image.src} className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60">
-                          <img src={image.src} alt={image.alt} className="h-52 w-full object-cover" />
-                          <p className="border-t border-white/10 px-4 py-3 text-sm text-slate-300">{image.alt}</p>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
-                  <div className="mt-6 space-y-4 text-sm leading-8 text-slate-300">
-                    {project.caseStudy.paragraphs.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
-                  </div>
-                </div>
-              )}
+              <h3 className="mb-4 text-xl font-semibold">{item.title}</h3>
+              <p className="leading-7 text-zinc-400">{item.text}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-r from-slate-900 via-slate-900 to-emerald-950/40 p-8 shadow-2xl shadow-black/20">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-300">Career Direction</p>
-          <h2 className="mt-4 text-3xl font-semibold text-white">Programming, AI, and business analytics</h2>
-          <p className="mt-4 max-w-3xl leading-8 text-slate-300">
-            My goal is to grow into a data-driven operations expert by combining programming,
-            artificial intelligence, and business analytics. I want to design systems that do not
-            just function technically, but actively improve how businesses operate, compete, and
-            make decisions.
-          </p>
-        </div>
-      </section>
+      <section className="border-y border-white/10 bg-zinc-950">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+          <div className="mb-16 max-w-3xl space-y-4">
+            <p className="text-sm uppercase tracking-[0.3em] text-emerald-400">
+              Engineering Stack
+            </p>
 
-      <section id="contact" className="mx-auto max-w-6xl px-6 pb-20 pt-16">
-        <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl md:p-10">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-300">Contact</p>
-          <h2 className="mt-4 text-3xl font-semibold text-white">Let’s connect</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <a href="mailto:otosin11@gmail.com" className="rounded-2xl border border-white/10 bg-slate-900/60 p-5 transition hover:border-white/20">
-              <p className="text-sm text-slate-400">Email</p>
-              <p className="mt-2 text-white">otosin11@gmail.com</p>
-            </a>
-            <a href="tel:+2348145120612" className="rounded-2xl border border-white/10 bg-slate-900/60 p-5 transition hover:border-white/20">
-              <p className="text-sm text-slate-400">Phone</p>
-              <p className="mt-2 text-white">+2348145120612</p>
-            </a>
-            <a
-              href="https://github.com/gibsonJESUS1"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-2xl border border-white/10 bg-slate-900/60 p-5 transition hover:border-white/20"
-            >
-              <p className="text-sm text-slate-400">GitHub</p>
-              <p className="mt-2 text-white">github.com/gibsonJESUS1</p>
-            </a>
+            <h2 className="text-4xl font-bold lg:text-5xl">
+              Backend engineering technologies.
+            </h2>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-2">
+            {Object.entries(stack).map(([category, items]) => (
+              <div
+                key={category}
+                className="rounded-3xl border border-white/10 bg-black p-8"
+              >
+                <h3 className="mb-6 text-2xl font-semibold">{category}</h3>
+
+                <div className="flex flex-wrap gap-3">
+                  {items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 bg-zinc-900 px-4 py-2 text-sm text-zinc-300"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-    </div>
-  );
+
+      <section className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+        <div className="mb-16 max-w-3xl space-y-4">
+          <p className="text-sm uppercase tracking-[0.3em] text-emerald-400">
+            Featured Projects
+          </p>
+
+          <h2 className="text-4xl font-bold lg:text-5xl">
+            Production-focused backend engineering projects.
+          </h2>
+        </div>
+
+        <div className="space-y-10">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="rounded-3xl border border-white/10 bg-zinc-950 p-10"
+            >
+              <div className="grid gap-10 lg:grid-cols-2">
+                <div className="space-y-6">
+                  <div className="space-y-4">
+                    <h3 className="text-3xl font-bold">{project.title}</h3>
+                    <p className="leading-8 text-zinc-400">
+                      {project.description}
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="mb-4 text-lg font-semibold text-emerald-400">
+                      Engineering Highlights
+                    </h4>
+
+                    <ul className="space-y-3 text-zinc-300">
+                      {project.highlights.map((highlight) => (
+                        <li key={highlight}>• {highlight}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="flex flex-wrap gap-4 pt-4">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      className="rounded-2xl bg-white px-5 py-3 font-semibold text-black"
+                    >
+                      GitHub Repository
+                    </a>
+
+                    {project.live !== '#' && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        className="rounded-2xl border border-white/20 px-5 py-3 font-semibold"
+                      >
+                        Live Project
+                      </a>
+                    )}
+                  </div>
+                </div>
+
+                <div className="rounded-3xl border border-emerald-500/20 bg-black p-8">
+                  <div className="mb-6 flex items-center justify-between">
+                    <h4 className="text-xl font-semibold text-emerald-400">
+                      System Architecture
+                    </h4>
+
+                    <div className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-400">
+                      Backend Flow
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 font-mono text-sm text-zinc-300">
+                    <div>Client Application</div>
+                    <div className="pl-8 text-emerald-400">↓</div>
+                    <div>NestJS REST API</div>
+                    <div className="pl-8 text-emerald-400">↓</div>
+                    <div>Authentication Layer</div>
+                    <div>Validation Layer</div>
+                    <div>Business Logic Layer</div>
+                    <div className="pl-8 text-emerald-400">↓</div>
+                    <div>Prisma ORM</div>
+                    <div className="pl-8 text-emerald-400">↓</div>
+                    <div>PostgreSQL Database</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-zinc-950">
+        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+          <div className="grid gap-10 lg:grid-cols-2">
+            <div className="rounded-3xl border border-white/10 bg-black p-10">
+              <p className="mb-4 text-sm uppercase tracking-[0.3em] text-emerald-400">
+                Deployment & Infrastructure
+              </p>
+
+              <h2 className="mb-8 text-4xl font-bold">
+                Cloud-ready backend deployment workflow.
+              </h2>
+
+              <div className="space-y-4 text-zinc-300">
+                <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-zinc-950 px-5 py-4">
+                  <span>Railway</span>
+                  <span className="text-zinc-500">Backend Hosting</span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-zinc-950 px-5 py-4">
+                  <span>Vercel</span>
+                  <span className="text-zinc-500">Frontend Deployment</span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-zinc-950 px-5 py-4">
+                  <span>PostgreSQL</span>
+                  <span className="text-zinc-500">Database Persistence</span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-zinc-950 px-5 py-4">
+                  <span>Docker</span>
+                  <span className="text-zinc-500">Containerization Learning</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-white/10 bg-black p-10">
+              <p className="mb-4 text-sm uppercase tracking-[0.3em] text-emerald-400">
+                Current Engineering Growth
+              </p>
+
+              <h2 className="mb-8 text-4xl font-bold">
+                Scaling toward distributed systems engineering.
+              </h2>
+
+              <div className="space-y-4 text-zinc-300">
+                {[
+                  'Distributed Systems Fundamentals',
+                  'Cloud Infrastructure Engineering',
+                  'CI/CD Pipelines',
+                  'Observability & Monitoring',
+                  'Event-driven Architecture',
+                  'Backend Performance Optimization',
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-white/10 bg-zinc-950 px-5 py-4"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="mx-auto max-w-7xl px-6 py-20 lg:px-12">
+        <div className="rounded-3xl border border-white/10 bg-zinc-950 p-10 text-center">
+          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-emerald-400">
+            Open To Opportunities
+          </p>
+
+          <h2 className="mx-auto mb-6 max-w-3xl text-4xl font-bold lg:text-5xl">
+            Backend engineering opportunities, remote roles & international relocation.
+          </h2>
+
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-zinc-400">
+            Interested in backend engineering, cloud-oriented systems, API architecture,
+            and scalable production applications.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:otosin11@gmail.com"
+              className="rounded-2xl bg-white px-6 py-3 font-semibold text-black"
+            >
+              Contact Me
+            </a>
+
+            <a
+              href="https://github.com/gibsonJESUS1"
+              target="_blank"
+              className="rounded-2xl border border-white/20 px-6 py-3 font-semibold"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/tosin-owolabi-98b2b450/"
+              target="_blank"
+              className="rounded-2xl border border-white/20 px-6 py-3 font-semibold"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  )
 }
